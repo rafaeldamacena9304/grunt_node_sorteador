@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="./dist/styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Sorteador</h1>
+        <form  id="formulario" action="">
+            <div>
+                <label for="numeroSorteio">Número máximo</label>
+                <input id="numeroSorteio" type="number" required min="2" max="250" step="1">
+            </div>
+            <button type="submit">
+                Sortear número
+            </button>
+        </form>
+        <div class="resultado">
+            <p>
+                O número sorteado foi:
+                <span id="resultado"></span>
+            </p>
+        </div>
+    </main>
+    <script src="./dist/scripts/main.js"></script>
+</body>
+</html>
